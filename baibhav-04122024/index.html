@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Factory</title>
+    <link rel="shortcut icon" type="image"  href="./image/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Oleo Script' rel='stylesheet'>
+    <meta name="keywords" content="Friend's Bakers, FRIEND'S BAKERS, friends bakers, birthday cakes, anniversary cakes, kids cakes, pastries, cream cake, chocolate cake, fruit cake, photo cake, couple cake, panda cake, doll cake, car cake, ice cream pastry, choco pastry, dark chocolate pastry, cake delivery, best bakery, online cake order, custom cakes, fresh cakes, heart-shaped cakes, bakery near me, chocolate slice cake, affordable cakes, cake shop near me">
+    <meta name="description" content="Friend's Bakers offers a wide range of freshly baked cakes and pastries for every occasion. Explore our custom cakes and enjoy fast, reliable delivery.">
+    <!-- bootstrap links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<style>
+    #baker-logo{
+        display: inline-block;
+        margin-left: 5px;
+        font-family:'Oleo Script';
+        
+    }
+</style>
+   
+</head>
+<body>
+    <div class="all-content">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #573818;">
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html" id="logo">
+                <img src="./image/cake-new-logo.png" alt="Logo" width="50px"> 
+                 <span id="baker-logo">FRIEND'S BAKERS</span>
+               
+            </a>
+        
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <img src="./image/menu.png" alt="Menu" width="30px">
+                </span>
+            </button>
+        
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <!-- Dropdown for Cakes -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Cakes
+                        </a>
+                        <ul class="dropdown-menu  menu-d"  aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item menu-i"  href="birthday.html">Birthday Cakes</a></li>
+                            <li><a class="dropdown-item menu-i" href="anniversary.html">Anniversary Cakes</a></li>
+                            <li><a class="dropdown-item menu-i" href="kids.html">Kids Cakes</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>    
+        </nav>
+        
+        <!-- navbar end -->
+      
+
+      <!-- Home Section -->
+      <div class="container-fluid home d-flex align-items-center justify-content-center flex-wrap" id="home" >
+        <div class="row w-100">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner" id="con">
+                    <div class="carousel-item active" data-bs-interval="2500">
+                        <div class="row flex-column flex-lg-row">
+                            <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center">
+                                <span></span>
+                                <img src="./image/cake-banner1.gif" class="d-block" alt="...">
+                            </div>
+                            <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center">
+                                <!-- <span>0% off</span> -->
+                                <div data-aos="zoom-out-right">
+                                    <div class="content text-center">
+                                        <span class="up-to">UP TO 30% OFF</span>
+                                        <h3>Delicious<br>Friend's Bakers</h3>
+                                        <h2>Category <span class="changecontent"></span></h2>
+                                        <p>Delicious Friend's Bakers is dedicated to creating exquisite custom cakes for every <br> occasion. With a wide range of flavors and stunning designs, we ensure each cake is a delightful centerpiece for celebrations.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- First slide end here -->
+                    <div class="carousel-item" data-bs-interval="2500">
+                        <div class="row flex-column flex-lg-row">
+                            <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center">
+                                <img src="./image/cake-banner2.gif" class="d-block" id="cake-2" alt="...">
+                            </div>
+                            <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center">
+                                <div data-aos="zoom-out-right">
+                                    <div class="content text-center">
+                                        <span class="up-to">UP TO 30% OFF</span>
+                                        <h3>Delicious<br>Friend's Bakers</h3>
+                                        <h2>Category <span class="changecontent"></span></h2>
+                                        <p>Delicious Friend's Bakers is dedicated to creating exquisite custom cakes for every <br> occasion. With a wide range of flavors and stunning designs, we ensure each cake is a delightful centerpiece for celebrations.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Second slide end here -->
+                    <div class="carousel-item" data-bs-interval="2500">
+                        <div class="row flex-column flex-lg-row">
+                            <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center">
+                                <img src="./image/cake-banner3.gif" class="d-block" alt="...">
+                            </div>
+                            <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center">
+                                <div data-aos="zoom-out-right">
+                                    <div class="content text-center">
+                                        <span class="up-to">UP TO 30% OFF</span>
+                                        <h3>Delicious<br>Friend's Bakers</h3>
+                                        <h2>Category <span class="changecontent"></span></h2>
+                                        <p>Delicious Friend's Bakers is dedicated to creating exquisite custom cakes for every <br> occasion. With a wide range of flavors and stunning designs, we ensure each cake is a delightful centerpiece for celebrations.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Third slide end here -->
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div id="btnorder" style="text-align: center; margin-top: 40px;">
+                <button class="btn btn-warning"><a href="https://wa.me/917013727776?" target="_blank" class="text-decoration-none">Order Now</a></button>
+            </div>
+            <!-- End here -->
+        </div>
+    </div>
+    
+        
+
+
+
+
+        <!-- home section end -->
+
+
+      <!-- top cards -->
+    
+    
+        <!-- ---------------- -->
+      
+          <!-- top cards end -->
+
+      
+      <!-- whatsapp chat -->
+      <!-- WhatsApp Button -->
+   <a href="https://wa.me/917013727776?" target="_blank" class="whatsapp-container">  
+    <div class="whatsapp-button" id="whatsapp-btn">
+     <img src="image/file.png" alt="WhatsApp Logo" >
+  </div>
+    </a>  
+  
+   
+     <!-- whatsapp chat here -->
+
+
+
+       <!-- product cards -->
+      <section id="product-cards" data-aos="fade-up" data-aos-duration="1500">
+        <!-- <div class="container" id="category">
+            <h1 class="cate">CAKE CATEGORYS</h1>
+             -->
+            <!-- First Row of Cakes -->
+             <div class="container" id="category">
+                <h1>Birthday Cake</h1> 
+            <div class="row mt-5">
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 py-3">
+                    <div class="card">
+                        
+                        <img src="./image/pineapple.jpg" class="card-img-top cimg" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">Pineapple - 1Kg</h3>
+                            <!-- <h3 class="card-title"></h3> -->
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                            </div>
+                            <p class="card-text">Pineapple cake is a sweet, tropical dessert made with pineapple, butter, flour, and sugar.</p>
+                            <h6 id="btn2" class="d-flex justify-content-between align-items-center">
+                                <span>Rs. 350</span>
+                                <a href="https://wa.me/917013727776?" target="_blank" class="btn btn-primary text-decoration-none">Order Now</a>
+                            </h6>
+                            
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 py-3">
+                    <div class="card">
+                        
+                        <img src="./image/butters.jpg" class="card-img-top cimg" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">Butter Scotch -1Kg</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                            </div>
+                            <p class="card-text">Butterscotch cake is a delicious dessert made with rich butterscotch flavor, creamy frosting, and caramel drizzle.</p>
+                            <h6 id="btn2" class="d-flex justify-content-between align-items-center">
+                                <span>Rs. 400</span>
+                                <a href="https://wa.me/917013727776?" target="_blank" class="btn btn-primary text-decoration-none">Order Now</a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 py-3">                    
+                    <div class="card">
+                        <img src="./image/dark-f.png" class="card-img-top cimg" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">Black Forest - 1Kg</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star"></i>
+                            </div>
+                            <p class="card-text">Black Forest cake is a German dessert with chocolate sponge, cherries, whipped cream, and kirsch liqueur.</p>
+                            <h6 id="btn2" class="d-flex justify-content-between align-items-center">
+                                <span>Rs. 400</span>
+                                <a href="https://wa.me/917013727776?" target="_blank" class="btn btn-primary text-decoration-none">Order Now</a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 py-3">
+                    <div class="card">
+                        
+                        <img src="./image/redvv.jpeg" class="card-img-top cimg" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">Red Velvet - 1Kg</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                            </div>
+                            <p class="card-text">Red velvet cake is a moist, fluffy dessert with a hint of cocoa, vibrant red color, and cream cheese frosting.</p>
+                            <h6 id="btn2" class="d-flex justify-content-between align-items-center">
+                                <span>Rs. 600</span>
+                                <a href="https://wa.me/917013727776?" target="_blank" class="btn btn-primary text-decoration-none">Order Now</a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+           
+            <button id="birth-1" class="btn-primary">
+                <a href="birthday.html">Click More</a>
+            </button>
+        </div>
+    </section>
+
+
+    <!-- top cards -->
+       <!-- ----------------- -->
+       <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Carousel item 1 -->
+            <div class="carousel-item active" data-bs-interval="3000">
+                <div class="container mt-3" id="box" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="row justify-content-center">
+                        <!-- Card 1 (visible on all screen sizes) -->
+                        <div class="col-12 col-md-6 col-lg-4 py-2">
+                            <div class="card p-2">
+                                <img src="./image/backgro.png" class="card-img-top bimg" alt="Card Image 1">
+                            </div>
+                        </div>
+                        <!-- Card 2 (visible on md and larger screens) -->
+                        <div class="col-12 col-md-6 col-lg-4 py-2 d-none d-md-block">
+                            <div class="card p-2">
+                                <img src="./image/box2.jpg" class="card-img-top bimg" alt="Card Image 2">
+                            </div>
+                        </div>
+                        <!-- Card 3 (visible only on large screens) -->
+                        <div class="col-12 col-lg-4 py-2 d-none d-lg-block">
+                            <div class="card p-2">
+                                <img src="./image/box3.jpg" class="card-img-top bimg" alt="Card Image 3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Additional carousel items for other slides follow the same structure -->
+            <div class="carousel-item" data-bs-interval="3000">
+                <div class="container mt-3" id="box" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-6 col-lg-4 py-2">
+                            <div class="card p-2">
+                                <img src="./image/slice.png" class="card-img-top bimg" alt="Card Image 1">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 py-2 d-none d-md-block">
+                            <div class="card p-2">
+                                <img src="./image/Pastry1.png" class="card-img-top bimg" alt="Card Image 2">
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 py-2 d-none d-lg-block">
+                            <div class="card p-2">
+                                <img src="./image/pa.png" class="card-img-top bimg" alt="Card Image 3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <div class="container mt-3" id="box" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-6 col-lg-4 py-2">
+                            <div class="card p-2">
+                                <img src="./image/anni4.png" class="card-img-top bimg" alt="Card Image 1">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 py-2 d-none d-md-block">
+                            <div class="card p-2">
+                                <img src="./image/fruit.png" class="card-img-top bimg" alt="Card Image 2">
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 py-2 d-none d-lg-block">
+                            <div class="card p-2">
+                                <img src="./image/broun.png" class="card-img-top bimg" alt="Card Image 3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for additional carousel items -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+    
+    
+    
+    <!-- Anniversary Cake -->
+
+    <section id="product-cards" data-aos="fade-up" data-aos-duration="1500">
+        <div class="container" id="anni">
+            <h1 class="text-center" style="margin-top: 50px;">Anniversary Cakes</h1>
+            <div class="row mt-5">
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 py-3">
+                    <div class="card position-relative">
+                        
+                        <img src="./image/anni1.png" class="card-img-top kimg" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">Photo Cake</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                            </div>
+                            <p class="card-text">A photo cake is a personalized cake featuring edible images, perfect for celebrations and memorable occasions.</p>
+                            <h6 id="btn2" class="d-flex justify-content-between align-items-center">
+                                <span>Rs. 449</span>
+                                <a href="https://wa.me/917013727776?" target="_blank" class="btn btn-primary text-decoration-none">Order Now</a>
+                            </h6>                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 py-3">
+                    <div class="card position-relative">
+                        
+                        <img src="./image/anni2.png" class="card-img-top kimg" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">Couple Cake</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                            </div>
+                            <p class="card-text">A couple cake is a romantic dessert, often adorned with couple-themed decorations, perfect for celebrations.</p>
+                            <h6 id="btn2" class="d-flex justify-content-between align-items-center">
+                                <span>Rs. 340</span>
+                                <a href="https://wa.me/917013727776?" target="_blank" class="btn btn-primary text-decoration-none">Order Now</a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 py-3">                   
+                     <div class="card position-relative">
+                        
+                        <img src="./image/anni3.png" class="card-img-top kimg" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">First Year Cake</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                            </div>
+                            <p class="card-text">Love’s First Year – A Sweet Symphony of Vanilla, Chocolate, and Roses.</p>
+                            <h6 id="btn2" class="d-flex justify-content-between align-items-center">
+                                <span>Rs. 650</span>
+                                <a href="https://wa.me/917013727776?" target="_blank" class="btn btn-primary text-decoration-none">Order Now</a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 py-3">
+                    <div class="card position-relative">
+                        
+                        <img src="./image/anni4.png" class="card-img-top kimg" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">Valentine Heart</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                            </div>
+                            <p class="card-text">A delicious Valentine heart cake, rich in chocolate, adorned with fresh strawberries and sweet frosting.</p>
+                            <h6 id="btn2" class="d-flex justify-content-between align-items-center">
+                                <span>Rs. 549</span>
+                                <a href="https://wa.me/917013727776?" target="_blank" class="btn btn-primary text-decoration-none">Order Now</a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <button id="birth-1">
+                    <a href="anniversary.html">Click More</a>
+                </button>
+            </div>
+        </div>
+    </section>
+
+      <!-- banner -->
+      <div class="banner d-flex flex-wrap align-items-center justify-content-center" data-aos="fade-up" data-aos-duration="1500">
+        <div class="content text-center text-white">
+            <h3 class="fw-bold">Delicious Cake</h3>
+            <h2>UP TO 30% OFF</h2>
+            <p>Indulge in our delicious cakes! Enjoy up to 30% off your favorite flavors today!</p>
+            <div id="btnorder">
+                <button class="btn btn-warning">
+                    <a href="https://wa.me/917013727776?" target="_blank" class="text-decoration-none">Order Now</a>
+                </button>
+            </div>
+        </div>
+        <div class="img flex-fill">
+            <img src="./image/banner-background.png" alt="Delicious Cake Banner" class="img-fluid">
+        </div>
+    </div>
+    
+      <!-- banner end -->
+
+
+    <section id="product-cards" data-aos="fade-up" data-aos-duration="1500">
+        <div class="container" id="kid">
+            <h1 class="text-center" style="margin-top: 50px;">Cakes For Kids</h1>
+            <div class="row mt-5">
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 py-3">
+                    <div class="card position-relative">
+                        
+                        <img src="./image/kids1.png" class="card-img-top kimg" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">Panda Cake</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                            </div>
+                            <p class="card-text">The Kids Panda Cake is an adorable treat, perfect for adding charm to children’s parties and delightful celebrations!</p>
+                            <h6 id="btn2" class="d-flex justify-content-between align-items-center">
+                                <span>Rs. 549</span>
+                                <a href="https://wa.me/917013727776?" target="_blank" class="btn btn-primary text-decoration-none">Order Now</a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 py-3">
+                    <div class="card position-relative">
+                        
+                        <img src="./image/kids2.png" class="card-img-top kimg" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">White Cake</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                            </div>
+                            <p class="card-text">Experience our delicious white cake, light and fluffy, perfect for any celebration!</p>
+                            <h6 id="btn2" class="d-flex justify-content-between align-items-center">
+                                <span>Rs. 340</span>
+                                <a href="https://wa.me/917013727776?" target="_blank" class="btn btn-primary text-decoration-none">Order Now</a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 py-3">
+                    <div class="card position-relative">
+                        
+                        <img src="./image/kid3.png" class="card-img-top kimg" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">Doll Cake</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                            </div>
+                            <p class="card-text">Celebrate with our charming doll cake, crafted to delight! Deliciously made and beautifully designed, it’s perfect for any special occasion.</p>
+                            <h6 id="btn2" class="d-flex justify-content-between align-items-center">
+                                <span>Rs. 650</span>
+                                <a href="https://wa.me/917013727776?" target="_blank" class="btn btn-primary text-decoration-none">Order Now</a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 py-3">
+                    <div class="card position-relative">
+                        
+                        <img src="./image/kids5.png" class="card-img-top kimg" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">Car Cake</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                            </div>
+                            <p class="card-text">Drive your celebration forward with our delicious car cake, perfect for all occasions!</p>
+                            <h6 id="btn2" class="d-flex justify-content-between align-items-center">
+                                <span>Rs. 549</span>
+                                <a href="https://wa.me/917013727776?" target="_blank" class="btn btn-primary text-decoration-none">Order Now</a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="birth-1">
+                    <a href="anniversary.html">Click More</a>
+                </button>
+            </div>
+        </div>
+    </section>
+    
+
+      <!-- product cards end-->
+
+    
+
+
+
+      <!-- gallary -->
+      <section id="gallery" class="pt-5" data-aos="fade-up" data-aos-duration="1500">
+        <div class="container">
+          <h1 class="gallery text-center">OUR GALLERY</h1>
+          <div class="row mt-4">
+            <div class="col-md-4 py-3">
+              <div class="card position-relative">
+                <img src="./image/c3.png" class="card-img-top" alt="Donuts">
+                <div class="overlay d-flex align-items-center justify-content-center position-absolute w-100 h-100" style="top: 0; background-color: rgba(0, 0, 0, 0.5);">
+                  <h3 class="text-center text-white">Pastry</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 py-3">
+              <div class="card position-relative">
+                <img src="./image/o2.png" class="card-img-top" alt="Ice Cream">
+                <div class="overlay d-flex align-items-center justify-content-center position-absolute w-100 h-100" style="top: 0; background-color: rgba(0, 0, 0, 0.5);">
+                  <h3 class="text-center text-white">Ice Cream</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 py-3">
+              <div class="card position-relative">
+                <img src="./image/c6.png" class="card-img-top" alt="Cup Cake">
+                <div class="overlay d-flex align-items-center justify-content-center position-absolute w-100 h-100" style="top: 0; background-color: rgba(0, 0, 0, 0.5);">
+                  <h3 class="text-center text-white">Choco Pastry</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="row mt-4" data-aos="fade-up" data-aos-duration="1500">
+            <div class="col-md-4 py-3">
+              <div class="card position-relative">
+                <img src="./image/c2.png" class="card-img-top" alt="Delicious Cake">
+                <div class="overlay d-flex align-items-center justify-content-center position-absolute w-100 h-100" style="top: 0; background-color: rgba(0, 0, 0, 0.5);">
+                  <h3 class="text-center text-white">Dark Choco Pastry</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 py-3">
+              <div class="card position-relative">
+                <img src="./image/o5.png" class="card-img-top" alt="Chocolate Cake">
+                <div class="overlay d-flex align-items-center justify-content-center position-absolute w-100 h-100" style="top: 0; background-color: rgba(0, 0, 0, 0.5);">
+                  <h3 class="text-center text-white">Chocolate Cake</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 py-3">
+              <div class="card position-relative">
+                <img src="./image/o6.png" class="card-img-top" alt="Slice Cake">
+                <div class="overlay d-flex align-items-center justify-content-center position-absolute w-100 h-100" style="top: 0; background-color: rgba(0, 0, 0, 0.5);">
+                  <h3 class="text-center text-white">Slice Cake</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- gallary -->
+
+
+
+
+      <!-- about -->
+      <div class="container py-5" id="about" data-aos="fade-up" data-aos-duration="1500">
+        <h1 class="text-center">ABOUT US</h1>
+        <div class="row mt-4">
+          <div class="col-md-6 py-3">
+            <div class="card shadow-sm">
+              <img src="./image/about.png" class="card-img-top" alt="About Us">
+            </div>
+          </div>
+          <div class="col-md-6 py-3">
+            <p class="lead">
+                Welcome to Friend's Bakery , where our passion for baking meets over 10 years of expertise! Led by our skilled Cake Specialist, we pride ourselves on crafting a delightful array of cakes that are not only delicious but also visually stunning.
+                At Friend's Bakery , we offer a wide variety of cakes to suit every occasion. From classic vanilla and rich chocolate to unique flavors like red velvet and lemon drizzle, there’s something for everyone.
+                <br><br> We also specialize in custom photo cakes, allowing you to personalize your celebrations with edible images that capture your cherished moments.
+                Whether you're planning a wedding, anniversary, or any special event, we are equipped to handle bulk orders with ease. 
+            </p>
+            <!-- <div class="mt-3">
+              <button class="btn btn-primary">Read More...</button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+            <!-- about -->
+
+
+      <!-- contact  -->
+    
+            <!-- Contact Form Section -->
+            <div class="container py-5" id="contact" data-aos="fade-up" data-aos-duration="1500">
+                <h1 class="text-center">CONTACT US</h1>
+                <div class="row mt-4">
+                    <!-- Contact Form Section -->
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-12 col-md-6 py-1">
+                        <div class="form-group">
+                            <input type="text" class="form-control bg-secondary text-white" id="usr" placeholder="Name">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 py-1">
+                        <div class="form-group">
+                            <input type="email" class="form-control bg-secondary text-white" id="eml" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="col-12 py-1">
+                        <div class="form-group">
+                            <input type="number" class="form-control bg-secondary text-white" id="phn" placeholder="Phone">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group mt-3">
+                    <textarea class="form-control bg-secondary text-white" rows="5" id="comment" placeholder="Message"></textarea>
+                </div>
+                <div id="messagebtn" class="text-center mt-4">
+                    <button class="btn btn-outline-light btn-lg">Send Message</button>
+                </div>
+            </div>            
+                    <!-- Map Section -->
+                    <div class="col-12 col-md-6 wow fadeIn" data-wow-delay="0.1s">
+                        <iframe class="position-relative rounded w-100"
+                                src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d121753.02173740201!2d78.34512894055082!3d17.517920291355523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3bcb8ff85fdc57b1%3A0x86349762d87c0427!2sGC9H%2B52C%2C%20Chandragiri%20Nagar%2C%20Prakasham%20Panthulu%20Nagar%2C%20Rodamestri%20Nagar%2C%20Hyderabad%2C%20Telangana%20500055!3m2!1d17.5179373!2d78.42753069999999!5e0!3m2!1sen!2sin!4v1730374369247!5m2!1sen!2sin" 
+                                frameborder="0" style="min-height: 350px; border:0;" 
+                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+            
+    
+      
+      <!-- contact end -->
+
+
+      <!-- footer -->
+      <footer id="footer" class="text-white py-5" data-aos="fade-up" data-aos-duration="1500">
+        <h1 class="text-center">FRIEND'S BAKERS</h1>
+        <p class="text-center">Friend's Bakers specializes in producing a variety of delicious cakes.</p>
+      
+        <div class="icons text-center my-4">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-google"></i>
+            <!-- <i class="fa-brands fa-skype"></i> -->
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+      
+        <div class="text-center copyright">
+          &copy; <strong>FRIEND'S BAKERS</strong>. All Rights Reserved
+        </div>
+      
+        <div class="text-center credite">
+          Designed By <a href="#" class="text-white"><span>Aerobyte Innovations pvt ltd.</span></a>
+        </div>
+      </footer>
+      
+      <!-- Back to top arrow -->
+      <a href="#" class="arrow position-fixed" style="bottom: 20px; right: 20px;">
+        <img src="./image/up-arrow.png" alt="Up Arrow" width="50px">
+      </a>
+      
+
+
+ 
+      <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script> -->
+
+
+      
+</body>
+</html>

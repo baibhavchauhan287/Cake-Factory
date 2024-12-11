@@ -1,0 +1,975 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Uchen', serif;
+}
+
+.all-content{
+    background: #2e1700;
+}
+/* Navbar Logo */
+#logo {
+    font-size: 23px;
+    color: white;
+}
+#logo img {
+    margin-bottom: 15px;
+}
+
+
+/* Navbar Links */
+.nav-link {
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    margin-left: 15px;
+    transition: 0.5s ease;
+}
+.nav-link:hover {
+    background-color: rgba(161,109,14,1);
+    color: white;
+    border-radius: 5px;
+}
+
+
+.menu-d {
+    background-color: rgba(161, 109, 14, 1) !important; /* Set background color to green */
+    border: none; /* Remove border */
+}
+
+/* Dropdown item styling */
+.menu-i {
+    color: white !important;  /* Set text color to white for better contrast */
+    transition: background-color 0.3s ease;
+}
+
+.menu-i:hover {
+    background-color: rgb(187, 177, 160) !important; /* Optional: Hover color */
+    color: white;
+    border-radius: 5px;
+}
+
+/* Navbar Icons */
+.icons {
+    margin-left: 30px;
+}
+.icons img {
+    margin-left: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.icons img:hover {
+    transform: translateY(-5px);
+}
+
+/* Small screens */
+@media screen and (max-width: 330px) {
+    #logo {
+        font-size: 15px;
+    }
+}
+/* navbar end */
+/* Home Section */
+.home {
+    height: 90.5vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./image/background2.png);
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    margin-top:30px;
+}
+
+.content h3 {
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+
+.content h2 {
+    font-size: 60px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+}
+.up-to{
+    font-size: 60px;
+    color: rgba(161, 109, 14, 1);
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+
+.changecontent::after {
+    content: "Birthday cake";
+    color: rgba(161, 109, 14, 1);
+    animation: changetext 10s infinite steps(1);
+    font-weight: bold;
+    display: inline-block;
+}
+
+
+@keyframes changetext {
+    0%, 20% {
+        content: "Birthday cake";
+    }
+    20.1%, 40% {
+        content: "Chocolate cake";
+    }
+    40.1%, 60% {
+        content: "Party cake";
+    }
+    60.1%, 80% {
+        content: "Slice cake";
+    }
+    80.1%, 100% {
+        content: "Cup cake";
+    }
+}
+
+.content p {
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+
+/* Media Queries */
+.d-block {
+    width: 100%;
+    max-width: 550px; /* Limit the maximum width */
+}
+
+/* Medium screens (768px to 992px) */
+@media (max-width: 992px) {
+    .d-block {
+        max-width: 450px;
+    }
+    .up-to{
+        font-size: 50px;
+    }
+    .content h3 {
+        font-size: 50px;
+    }
+    .content h2 {
+        font-size: 45px;
+    }
+    .home {
+        height: 120vh; /* To increase height for better layout on medium screens */
+    }
+}
+
+/* Small screens (up to 768px) */
+@media (max-width: 768px) {
+    .d-block {
+        max-width: 400px;
+        max-height: 300px; /* Adjusted for smaller screens */
+        margin-bottom: 30px;
+    }
+    .content h3,
+    .content h2,.up-to {
+        font-size: 35px;
+    }
+    .content p {
+        font-size: 14px;
+    }
+    .home {
+        height: 100vh; /* Adjusts height to fit content for smaller screens */
+    }
+}
+
+/* Extra Small screens (up to 576px) */
+@media (max-width: 576px) {
+    .d-block {
+        max-width: 300px;
+        max-height: 250px;
+        margin-bottom: 15px;
+    }
+    .content h3,
+    .content h2,.up-to {
+        font-size: 28px;
+    }
+    .content p {
+        font-size: 12px;
+    }
+    .home {
+        height: 100vh;
+    }
+}
+/* Extra Large screens (1200px and above) */
+@media (min-width: 1200px) {
+    .home {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end; /* Aligns content to the bottom */
+        height: 100vh;
+    }
+    #con{
+        margin-top: 110px;
+    }
+    /* #home{
+        margin-top: 80px;
+    } */
+
+    .carousel-item .row {
+        align-items: flex-end; /* Ensures each slide content is positioned at the bottom */
+    }
+    
+    
+    
+    .content {
+        margin-bottom: 30px; /* Adds spacing at the bottom */
+    }
+    
+}
+
+
+
+
+
+
+/* home section end */
+/* top cards */
+/* Box Section */
+#box {
+    margin-top: 30px;
+}
+
+#box .card {
+    box-shadow: 0px 2px 10px rgba(96, 222, 17, 0.6);
+    margin-top: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+#box .card:hover {
+    transform: translateY(-10px);
+}
+
+.bimg {
+    object-fit: cover;
+    width: 100%; 
+}
+
+/* Responsive height adjustments for images */
+@media (max-width: 576px) {
+    .bimg {
+        height: 250px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .bimg {
+        height: 295px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .bimg {
+        height: 250px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .bimg {
+        height: 225px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .bimg {
+        height: 270px;
+    }
+}
+
+
+/* top cards end */
+/* banner */
+.banner {
+    width: 100%;
+    min-height: 60vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./image/banner2.png);
+    background-size: cover;
+    box-shadow: 0px 0px 10px black;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.banner .content h3 {
+    color: rgba(161, 109, 14, 1);
+    font-weight: bold;
+}
+
+.banner .content h2 {
+    font-size: 2.5rem;
+    color: rgba(161,109,14,1);
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+
+.banner .content p {
+    color: rgba(161,109,14,1);
+}
+
+#btnorder .btn {
+    width: 150px;
+    height: 40px;
+    letter-spacing: 2px;
+    background-color: rgba(161,109,14,1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#btnorder .btn:hover {
+    background-color: #2e1700;
+    color: white;
+}
+
+/* Media queries for responsive font scaling */
+@media screen and (max-width: 992px) {
+    .banner {
+        min-height: 75vh;
+    }
+
+    .banner .content h2 {
+        font-size: 2rem;
+    }
+
+    .banner .content h3 {
+        font-size: 1.8rem;
+    }
+
+    .banner .content p {
+        font-size: 1rem;
+    }
+
+    .img {
+        display: none; /* Hide image for medium and small screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner {
+        min-height: 100vh;
+    }
+
+    .banner .content h2 {
+        font-size: 1.8rem;
+    }
+
+    .banner .content h3 {
+        font-size: 1.5rem;
+    }
+
+    .banner .content p {
+        font-size: 0.9rem;
+    }
+
+    #btnorder .btn {
+        font-size: 0.9rem;
+        width: 130px;
+        height: 35px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .banner .content h2 {
+        font-size: 1.5rem;
+        color: whitesmoke;
+    }
+    .banner {
+        width: 100%;
+        min-height: 60vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./image/banner-background.png);
+        background-size: cover;
+        box-shadow: 0px 0px 10px black;
+        margin-top: 50px;
+        padding: 20px;
+    }
+    
+
+    .banner .content h3 {
+        font-size: 1.2rem;
+        color: whitesmoke;
+    }
+
+    .banner .content p {
+        font-size: 0.8rem;
+        color: whitesmoke;
+    }
+
+    #btnorder .btn {
+        font-size: 0.8rem;
+        width: 120px;
+        height: 32px;
+    }
+}
+/* banner end */
+/* product cards */
+/* Product Card Title Styling */
+#product-cards h1 {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 70px;
+    color: rgba(161, 109, 14, 1);
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid rgba(161, 109, 14, 1);
+}
+
+/* Card Styling */
+#product-cards .card {
+    background-color: rgba(161, 109, 14, 1);
+    box-shadow: 0 0 3px black;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Overlay Styling */
+.overlay {
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90px;
+    transition: opacity 0.5s ease;
+}
+
+#product-cards .card:hover .overlay {
+    opacity: 1;
+}
+
+.overlay i img {
+    background-color: #2e1700;
+    height: 30px;
+    width: 30px;
+    padding: 7px;
+    margin-bottom: 5%;
+    cursor: pointer;
+}
+
+.overlay .btn-secondary {
+    background: transparent !important;
+    border: none;
+    box-shadow: none;
+}
+
+/* Card Body and Content Styling */
+#product-cards h3 {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+.star .checked {
+    color: yellow;
+}
+
+/* new code */
+#btn2 {
+    font-size: 20px;
+    color: #2e1700;
+    font-weight: bold;
+    padding: 10px 0;
+    border-top: 1px solid rgba(161, 109, 14, 0.3);
+    margin-top: 20px;
+}
+
+#btn2 span {
+    font-size: 20px;
+}
+
+#btn2 .btn-primary {
+    width: 110px;
+    height: 35px;
+    font-size: 15px;
+    background-color: transparent;
+    color: #2e1700;
+    border: 2px solid #573818;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+#btn2 .btn-primary:hover {
+    background-color: #2e1700;
+    color: white;
+    border-color: #2e1700;
+}
+
+/* new code end */
+#product-cards p {
+    color: #2e1700;
+    font-weight: bold;
+}
+
+#product-cards h6 {
+    font-size: 20px;
+    color: #2e1700;
+    font-weight: bold;
+}
+
+#product-cards h6 span button {
+    width: 110px;
+    height: 35px;
+    font-size: 15px;
+    background: transparent;
+    letter-spacing: 3px;
+    border: 2px solid #573818;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+#product-cards h6 span button:hover {
+    background-color: #2e1700;
+    color: white;
+}
+
+/* Image Sizes and Button Margins for Various Screens */
+.kimg {
+    height: 260px;
+    width: 255px;
+}
+
+.cimg {
+    height: 260px;
+    width: 253px;
+}
+
+.card-body {
+    height: 250px;
+}
+
+#btn1 {
+    margin-top: 35px;
+}
+
+#btn2 {
+    margin-top: 50px;
+}
+
+#btn3 {
+    margin-top: 70px;
+}
+.card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limit text to 3 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#birth-1 {
+    width: 110px;
+    height: 45px;
+    background-color: rgba(161, 109, 14, 1);
+    border-radius: 20px;
+    border: 2px solid #4d130f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+#birth-1 a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Responsive Styles for Large Screens (992px and above) */
+/* Small Devices (480px and below) */
+@media (max-width: 480px) {
+    .kimg, .cimg {
+        height: 200px;
+        width: 180px;
+    }
+
+    .card-body {
+        height: 220px;
+    }
+}
+
+/* Medium Devices (Tablets, 768px and below) */
+@media (max-width: 768px) {
+    .kimg, .cimg {
+        height: 210px;
+        width: 220px;
+    }
+
+    .card-body {
+        height: 220px;
+    }
+
+    #btn1, #btn2{
+        margin-top: 10px;
+    }
+     #btn3 {
+        margin-top: 10px;
+    }
+
+}
+
+/* Large Devices (Desktops, 992px and above) */
+@media (max-width: 992px) {
+    .kimg, .cimg {
+        height: 300px;
+        width: 240px;
+    }
+
+    .card-body {
+        height: 220px;
+    }
+
+    #btn1, #btn2, #btn3 {
+        margin-top: 10px;
+    }
+    
+}
+
+/* Extra Large Screens (1200px and above) */
+@media (max-width: 1200px) {
+    .kimg, .cimg {
+        height: 300px;
+        width: 300px;
+    }
+
+    .card-body {
+        height: 220px;
+    }
+
+    #btn1, #btn2, #btn3 {
+        margin-top: 10px;
+    }
+}
+
+/* Extra Small Devices (320px and below) */
+@media (max-width: 320px) {
+    .kimg {
+        height: 120px;
+        width: 150px;
+    }
+
+    .cimg {
+        height: 120px;
+        width: 180px;
+    }
+
+    .card-body {
+        height: 220px;
+    }
+    #btn1, #btn2{
+        margin-top: 10px;
+    }
+     #btn3 {
+        margin-top: 20px;
+    }
+}
+
+/* product cards end */
+/* gallary */
+#gallery {
+    margin-top: 50px;
+  }
+  
+  #gallery h1 {
+    font-weight: bold;
+    color: rgba(161, 109, 14, 1);
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid rgba(161, 109, 14, 1);
+    padding-bottom: 10px;
+    margin-top: 50px;
+  }
+  
+  #gallery .card {
+    box-shadow: 3px 3px 3px black;
+    cursor: pointer;
+  }
+  
+  #gallery .overlay {
+    opacity: 0;
+    transition: opacity 0.5s ease, margin-top 0.5s ease;
+  }
+  
+  #gallery .card:hover .overlay {
+    opacity: 1;
+  }
+  
+/* gallary */
+
+/* about */
+#about {
+    margin-top: 50px;
+  }
+  
+  #about h1 {
+    font-weight: bold;
+    color: rgba(161, 109, 14, 1);
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid rgba(161, 109, 14, 1);
+    padding-bottom: 10px;
+    margin-top: 50px;
+  }
+  
+  #about .card {
+    background-color: rgba(161, 109, 14, 1);
+  }
+  
+  #about p {
+    color: rgba(161, 109, 14, 1);
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+  }
+  
+  #about .btn {
+    width: 150px;
+    letter-spacing: 3px;
+    background-color: rgba(161, 109, 14, 1);
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    #about p {
+      font-size: 12px;
+    }
+  }
+  
+  @media screen and (max-width: 760px) {
+    #about p {
+      font-size: 16px;
+    }
+  }
+  
+/* about */
+
+/* contact */
+#contact {
+    margin-top: 100px;
+}
+
+#contact h1 {
+    font-weight: bold;
+    color: rgba(161, 109, 14, 1);
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid rgba(161, 109, 14, 1);
+    padding-bottom: 10px;
+    margin-top: 50px;
+}
+
+#contact .form-control {
+    background-color: white !important;
+    color: white;
+}
+
+#contact .form-control::placeholder {
+    color: rgb(11, 2, 2);
+}
+
+#messagebtn button {
+    width: 200px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    transition: 0.5s;
+}
+
+#messagebtn button:hover {
+    background-color: rgba(161, 109, 14, 1);
+    border-color: rgba(161, 109, 14, 1);
+}
+
+/* Map and contact form layout on medium and larger screens */
+@media (min-width: 768px) {
+    #contact .col-md-6 .position-relative {
+        min-height: 400px;
+    }
+}
+
+/* Adjustments for extra large screens */
+@media (min-width: 1200px) {
+    #contact {
+        padding: 80px 0;
+    }
+
+    #contact h1 {
+        font-size: 2.5rem;
+    }
+
+    #messagebtn button {
+        font-size: 1.2rem;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    #contact {
+        padding: 40px 0;
+    }
+
+    #contact h1 {
+        font-size: 1.8rem;
+    }
+    .position-relative{
+        margin-top: 40px;
+      }
+
+    #messagebtn button {
+        font-size: 1rem;
+        width: 200px;
+    }
+}
+
+
+  
+/* contact */
+
+/* footer */
+#footer {
+    background-color: #573818;
+    box-shadow: 0px 0px 5px black;
+    margin-top: 100px;
+  }
+  
+  #footer h1 {
+    color: white;
+    padding-top: 30px;
+  }
+  
+  #footer p {
+    color: white;
+  }
+  
+  .icons i {
+    background-color: white;
+    color: #573818;
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  .icons i:hover {
+    background-color: rgba(161, 109, 14, 1);
+    color: white;
+  }
+  
+  .copyright {
+    margin-top: 20px;
+  }
+  
+  
+  .credite a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .credite a:hover {
+    text-decoration: underline;
+  }
+  
+  .arrow {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: opacity 0.3s ease;
+  }
+  
+/* footer */
+html{
+    scroll-behavior: smooth;
+}
+.arrow{
+    position: fixed;
+    background-color: rgba(161,109,14,1);
+    border-radius: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+}
+
+ /* .fixed-top{
+    padding-left: 80px !important;
+    padding-right: 80px !important;
+} */
+.align-items-center{
+    /* padding-left: 60px !important;
+    padding-right: 60px !important; */
+    padding-top: 20px !important;
+} 
+
+.carousel-indicators{
+    margin-bottom: -2rem !important;
+}
+.burger-cls{
+    padding-top: 10px !important;
+}
+#product-cards h6 span button{
+    width: 120px;
+     text-align: center;
+  }
+
+  .whatsapp-button {
+    position: fixed; 
+    bottom: 27px; 
+    left: 25px; 
+    z-index: 1000; 
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #25d366;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    animation: bounce 2s infinite;
+}
+
+/* WhatsApp icon */
+.whatsapp-button img {
+ width: 75px;
+ height: 64px;
+}
+
+/* Bounce animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Hover effect */
+.whatsapp-button:hover {
+    background-color: #128c7e;
+    animation: none;
+}
+/* whatsapp button  end*/
+
+
+.navbar-dark .navbar-nav .nav-link {
+    margin-right: 20px;
+    color: rgba(255, 255, 255, .55);
+}
+
+a{
+    color: white !important;
+}
